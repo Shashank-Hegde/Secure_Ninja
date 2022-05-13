@@ -45,11 +45,11 @@ def generate_shares(n, m, secret):
     for i in range(0, n):
         x = random.randrange(1, limit)
         print(" gernerate x is ",x)
-        shares.append((x, polynom(x, coefficients)))
+        shares.append((x, create_polynomial(x, coefficients)))
     #shares= [(5,3),(7,2),(12,6),(30,5),(6,2.5)]
     return shares
 
-def polynom(x, coefficients):
+def create_polynomial(x, coefficients):
 
 #This generates a single point on the graph of given polynomial in `x`. The polynomial is given by the list of `coefficients`.
     point = 0
