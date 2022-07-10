@@ -4,7 +4,8 @@ import random
 from math import ceil
 from decimal import Decimal
 import os
-
+#new
+#new 1
 def main():
     t, n = 4, 7
     #option to convert string to ascii to and use text as integrer
